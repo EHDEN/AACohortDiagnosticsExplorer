@@ -1,0 +1,12 @@
+version: '3.8'
+services:
+  aacohortdiagnosticsexplore:
+    image: peterrijnbeek/aacohortdiagnosticsexplore:1.0.0
+    build:
+      context: .
+      args:
+        APP_NAME: AACohortDiagnosticsExplorer
+    ports:
+      - "3838:3838"
+    volumes:
+      - /tmp/databaseFile.sqlite:/data/AACohortDiagnosticsExplorer/MergedCohortDiagnosticsData.sqlite
