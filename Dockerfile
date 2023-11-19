@@ -17,7 +17,7 @@ RUN R -e "renv::restore()"
 
 
 # Set an argument for the app name
-ARG APP_NAME=AACohortDiagnosticsExplorer
+ARG APP_NAME
 
 # Set arguments for the GitHub branch and commit id abbreviation
 ARG GIT_BRANCH=unknown
